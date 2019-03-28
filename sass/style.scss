@@ -1,87 +1,79 @@
+$font_title: 'Julius Sans One', sans-serif;
+$font_text: 'Arial', sans-serif;
+$main_font_color: #666;
+
 /*
 *** COMMON
 */
+
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  min-width: 976px;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 3em;
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  color: #666;
-  background-color: #000;
+	min-width: 976px;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 3em;
+	font-family: $font_text;
+	font-weight: 400;
+	color: $main_font_color;
+	background-color: #000;
 }
 
 .container {
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .text-center {
-  text-align: center;
+	text-align: center;
 }
 
 p {
-  margin-bottom: 3em;
-  font-size: 1.2em;
-  line-height: 1.5;
-  word-spacing: .5em;
-  letter-spacing: .05em;
+	margin-bottom: 3em;
+	font-size: 1.2em;
+	line-height: 1.5;
+	word-spacing: .5em;
+	letter-spacing: .05em;
 }
 
 .settings-rounds {
-  color: white;
+	color: white;
 }
 
 button {
-  font-size: 20px;
-  margin: .3em;
-  border: 2px solid #ffb82b;
-  background-color: #ffd787;
-  padding: .3em;
-  color: #333;
-}
-
-button:hover {
-  cursor: pointer;
+	font-size: 20px;
+	margin: .3em;
+	border: 2px solid #ffb82b;
+	background-color: #ffd787;
+	padding: .3em;
+	color: #333;
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 #result {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-direction: row;
-      flex-direction: row;
-}
-
-#result .lost,
-#result .won {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  margin: 0 3em;
-}
-
-#result .lost .value,
-#result .won .value {
-  font-size: 24px;
-  color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	.lost,
+	.won {
+		display: flex;
+		flex-direction: column;
+		margin: 0 3em;
+		.value {
+			font-size: 24px;
+			color: white;
+		}
+	}
 }
 
 .interface {
-  display: none;
+	display: none;
 }
-/*# sourceMappingURL=style.css.map */
