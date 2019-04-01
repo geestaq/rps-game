@@ -32,6 +32,35 @@
 				</div>
 			</div>
 		</div>
+		<div class="overlay" id="modal-overlay">
+			<div class="modal" id="modal-result">
+				<a href="#" class="close">x</a>
+				<header></header>
+				<div class="content">
+				</div>
+				<div class="progress">
+				</div>
+			</div>
+			<div class="modal" id="modal-new-game-params">
+				<a href="#" class="close">x</a>
+				<header>Nowa gra</header>
+				<div class="content">
+					<form action="">
+						<div>
+							<label for="playerName">Nazwa gracza</label>
+							<input type="text" name="playerName" id="playerName">
+						</div>
+						<div>
+							<label for="roundsWon">Do ilu wygranych rund</label>
+							<input type="number" min="1" name="roundsWinLimit" id="roundsWinLimit" value="3">
+						</div>
+						<div>
+							<button class="btn-start">Start</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
